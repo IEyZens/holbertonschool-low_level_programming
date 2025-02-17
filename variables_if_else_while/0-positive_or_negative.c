@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-
 /**
  * main - main permet d'imprimer une chaine de caracteres
- * if / else if / else - permettent de poser des conditions
+ * if / else if / else permettent de poser des conditions
+ * Return: 0
  */
 
 int main(void)
