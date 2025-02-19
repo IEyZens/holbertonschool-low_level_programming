@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - Entry point
- * @int: int est un integer
+ * @n: est un integer
  * Return: Always 0 (Success)
  */
 
