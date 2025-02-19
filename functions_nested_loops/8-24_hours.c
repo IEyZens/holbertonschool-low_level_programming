@@ -2,5 +2,5 @@
 
 void jack_bauer(void)
 {
-	sleep (60);
+	sleep (1);
 }
