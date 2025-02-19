@@ -7,19 +7,23 @@
 
 int print_sign(int n)
 {
+	const char *npositive = "+";
+	const char *nzero = "0";
+	const char *negative = "-";
+
 	if (n > 0)
 	{
-		printf("+");
+		write(1, npositive, 1);
 		return (1);
 	}
 	else if (n == 0)
 	{
-		printf("0");
+		write(1, nzero, 1);
 		return (0);
 	}
 	else
 	{
-		printf("-");
+		write(1, negative, 1);
 		return (-1);
 	}
 }
