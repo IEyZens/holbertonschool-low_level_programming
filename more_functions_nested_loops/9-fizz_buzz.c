@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - check the code
- * @a: est un int
+ *
  * Return: Always 0.
  */
 
