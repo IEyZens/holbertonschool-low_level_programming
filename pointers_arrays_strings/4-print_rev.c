@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
  * print_rev - check the code
  * @s: est un char pointeur
@@ -8,12 +9,8 @@
 void print_rev(char *s)
 {
 	int i;
-	int len;
 
-	while (s[len] != '\0')
-		len++;
-
-	for (i = len - 1; i >= 0; i--)
+	for (i = _strlen(s) - 1; i >= '\0'; i--)
 		_putchar(s[i]);
 	_putchar('\n');
 }
