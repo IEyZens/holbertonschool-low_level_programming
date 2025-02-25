@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * swap_int - check the code
- *
+ * @a: est un int pointeur
+ * @b: est un int pointeur
  * Return: Always 0.
  */
 
