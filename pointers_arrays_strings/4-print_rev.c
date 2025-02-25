@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - check the code
- *
+ * @s: est un char pointeur
  * Return: Always 0.
  */
 
