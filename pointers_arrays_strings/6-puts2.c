@@ -8,6 +8,6 @@
 void puts2(char *str)
 {
 	for (; *str > '\0'; str++)
-		putchar(*str);
+		_putchar(*str);
 	putchar('\n');
 }
