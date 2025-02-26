@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 /**
  * rev_string - check the code
- *
+ * @s: est un char pointeur
  * Return: Always 0.
  */
 
