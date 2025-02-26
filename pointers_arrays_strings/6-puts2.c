@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - check the code
- *
+ * @str: est un char pointeur
  * Return: Always 0.
  */
 
