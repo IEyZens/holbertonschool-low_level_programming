@@ -7,24 +7,22 @@
 
 int _atoi(char *s)
 {
-	int a = 0, b = 1, c;
+	int a = 0, b = 1;
 
-	while (*s++)
+	do
 	{
-		a++;
 		if (*s == '-')
 			b *= -1;
-		
-		else if (b == '+')
-			continue;
+
+		else if (*s >= '0' && *s <= '9')
+			a = (a * 10) + (*s - '0');
+
+		else if (a > 0)
+			break;
+
 	}
 
-	while (a >= 48 && a <= 57)
-	{
-		c = (a / 10) - '0';
-		if (a > (INT_MAX - c) - 10)
-			continue;
-	}
+	while (*s++);
 
-	return (c * b);
+	return (a * b);
 }
