@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - check the code
- *
+ * @str: est un char pointeur
  * Return: Always 0.
  */
 
@@ -17,7 +17,7 @@ void puts_half(char *str)
 	else
 		index = (length + 1) / 2;
 
-	for (i = index; i <= length - 1; i++)
+	for (i = index; i <= length; i++)
 		_putchar(str[i]);
 
 	_putchar('\n');
