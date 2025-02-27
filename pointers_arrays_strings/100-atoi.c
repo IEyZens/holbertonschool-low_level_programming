@@ -12,8 +12,9 @@ int _atoi(char *s)
 	while (*s++)
 	{
 		a++;
-		if (b == '-')
-			_putchar('+');
+		if (*s == '-')
+			b *= -1;
+		
 		else if (b == '+')
 			continue;
 	}
