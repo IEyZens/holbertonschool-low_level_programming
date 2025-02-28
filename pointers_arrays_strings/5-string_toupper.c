@@ -1,13 +1,14 @@
 #include "main.h"
 /**
  * string_toupper - check the code
- *
+ * @str: est un char pointeur
  * Return: Always 0.
  */
 
-char *string_toupper(char *str);
+char *string_toupper(char *str)
 {
 	int i = 0;
+	char c;
 
 	while (str[i] != '\0')
 	{
