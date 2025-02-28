@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * _strcat - check the code
- *
+ * @src: est un char pointeur
+ * @dest: est un char pointeur
  * Return: Always 0.
  */
 
