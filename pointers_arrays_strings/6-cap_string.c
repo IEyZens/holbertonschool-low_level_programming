@@ -14,16 +14,18 @@
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		int is_sep = 0;
 		for (j = 0; sep[j] != '\0'; j++)
 		{
 			if (str[i] == sep[j])
 			{
-				valid = 1;
+				is_sep = 1;
 				break;
 			}
 		}
-
-		if (valid == 1 && str[i] >= 97 && str[i] <= 122)
+		if (is_sep)
+			valid = 1;
+		else if (valid == 1 && str[i] >= 97 && str[i] <= 122)
 		{
 			str[i] -= 32;
 			valid = 0;
