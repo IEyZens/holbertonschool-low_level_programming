@@ -25,7 +25,7 @@
 		}
 		if (is_sep)
 			valid = 1;
-		else if (valid == 1 && str[i] >= 97 && str[i] <= 122)
+		else if (valid && str[i] >= 97 && str[i] <= 122)
 		{
 			str[i] -= 32;
 			valid = 0;
