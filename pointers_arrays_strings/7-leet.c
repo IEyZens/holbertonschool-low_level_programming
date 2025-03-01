@@ -5,7 +5,7 @@
  * Return: Always 0.
  */
 
-char leet(char *str)
+char *leet(char *str)
 {
 	char replace[] = {'4', '3', '0', '7', '1'};
 	char letters[] = {'a', 'e', 'o', 't', 'l'};
