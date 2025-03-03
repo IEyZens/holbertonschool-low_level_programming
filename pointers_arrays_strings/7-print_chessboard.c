@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - check the code
- *
+ * print_chessboard - check the code
+ *@a: est un char pointeur tableau
  * Return: Always 0.
  */
 
