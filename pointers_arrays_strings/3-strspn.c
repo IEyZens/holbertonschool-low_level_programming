@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
+ * _strspn - check the code
  *@s: est un char pointeur
- @accept: est un char pointeur
+ *@accept: est un char pointeur
  * Return: Always 0.
  */
 
