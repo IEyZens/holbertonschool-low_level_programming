@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
- *
+ * print_diagsums - check the code
+ *@a: est un int pointeur
+ *@size: est un int
  * Return: Always 0.
  */
 
