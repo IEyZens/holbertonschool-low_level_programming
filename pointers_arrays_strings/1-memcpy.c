@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * simple_print_buffer - prints buffer in hexa
+ * _memcpy - prints buffer in hexa
  * @dest: est un char pointeur
  * @src: est un char pointeur
  * @n: est un int non assigné
