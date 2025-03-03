@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strbrk - check the code
+ * _strpbrk - check the code
  *@s: est un char pointeur
  *@accept: est un char pointeur
  * Return: Always 0.
