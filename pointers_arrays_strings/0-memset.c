@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * _memset - prints buffer in hexa
- * s: est un char pointeur
- * b: est un char
- * n: est un int non assigné
+ * @s: est un char pointeur
+ * @b: est un char
+ * @n: est un int non assigné
  *
  * Return: Nothing.
  */
