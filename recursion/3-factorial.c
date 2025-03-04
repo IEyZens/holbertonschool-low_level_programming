@@ -7,25 +7,10 @@
 
 int factorial(int n)
 {
-	if (n < 0) /* Si n est négatif, retourner -1 pour indiquer une erreur*/
-	{
-		return (-1);
-	}
-	else if (n == 0) /*Si n est égal à 0, retourner 1(le factoriel de 0 est 1)*/
-	{
-		return (1);
-	}
+	if (n < 0)
+		return (-1); /*Indiquer une erreur si le nombre est inférieur à 0*/
+	else if (n == 0)
+		return (1); /*Le factoriel de 0 est 1*/
 	else
-	{
-		int result = 1; /*Initialiser le résultat à 1*/
-		int i = 1; /*Initialiser i à 1, car on commence à multiplier par 1*/
-
-		while (i <= n) /*La boucle s'exécute jusqu'à ce que i atteigne n*/
-		{
-			result = result * i; /*Multiplier le résultat actuel par i*/
-			i++; /*Incrémenter i pour la prochaine itération*/
-		}
-
-		return (result); /*Retourner le résultat final */
-	}
+		return (n * factorial(n - 1));/*Appel récursif pour calculer factoriel*/
 }
