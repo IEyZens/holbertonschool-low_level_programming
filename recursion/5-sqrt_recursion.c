@@ -6,7 +6,12 @@
  * Return: Always 0.
  */
 
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
+{
+	return (_sqrt_recursion_helper(n, 1));
+}
+
+int _sqrt_recursion_helper(int n, int i)
 {
 	if (n < 0)
 		return (-1);
@@ -20,5 +25,5 @@ int _sqrt_recursion(int n, int i)
 	if (i * i > n)
 		return (-1);
 
-	return (_sqrt_recursion(n, i + 1));
+	return (_sqrt_recursion_helper(n, i + 1));
 }
