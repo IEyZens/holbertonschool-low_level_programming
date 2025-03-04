@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - check the code
- *
+ * is_prime_number - check the code
+ *@n: est un int
  * Return: Always 0.
  */
 
