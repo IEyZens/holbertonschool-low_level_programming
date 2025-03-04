@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - check the code
- *
+ * _pow_recursion - check the code
+ *@x: est un int
+ *@y: est un int
  * Return: Always 0.
  */
 
