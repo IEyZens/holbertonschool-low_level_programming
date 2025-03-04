@@ -2,7 +2,6 @@
 /**
  * _sqrt_recursion - check the code
  * @n: est un int
- * @i: est un int
  * Return: Always 0.
  */
 
@@ -10,6 +9,13 @@ int _sqrt_recursion(int n)
 {
 	return (_sqrt_recursion_helper(n, 1));
 }
+
+/**
+ * _sqrt_recursion_helper - check the code
+ * @n: est un int
+ * @i: est un int
+ * Return: Always 0.
+ */
 
 int _sqrt_recursion_helper(int n, int i)
 {
