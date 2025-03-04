@@ -2,6 +2,7 @@
 /**
  * is_prime_number - check the code
  *@n: est un int
+ *@i: est un int
  * Return: Always 0.
  */
 
