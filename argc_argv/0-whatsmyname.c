@@ -9,6 +9,8 @@
 
 int main(int argc, char *argv[])
 {
+	(void)argc; /* Indique que argc est volontairement non utilisé */
+
 	/* Affiche le nom du programme (incluant le chemin si présent) */
 	printf("%s\n", argv[0]);
 
