@@ -9,6 +9,8 @@
 
 int main(int argc, char *argv[])
 {
+	(void)argc;
+
 	/* while permet de parcourir chaque argument dans argv */
 	/* La condition (*argv) vérifie si le pointeur pointe vers un argument */
 	while (*argv)
