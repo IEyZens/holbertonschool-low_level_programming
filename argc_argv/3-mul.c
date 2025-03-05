@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
 	/*Affichage du résultat*/
 	printf("%d\n", result);
 
-
+	/*Fin du programme*/
 	return (0);
 }
