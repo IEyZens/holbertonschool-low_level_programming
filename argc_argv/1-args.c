@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	/* Indique que argv est volontairement non utilisé */
 	(void)argv;
 
-	/* Affiche le nombre d'arguments, y compris le nom du programme */
+	/* Affiche le nombre d'arguments, sans compter le programme */
 	printf("%d\n", argc - 1);
 
 	/* Retourne 0 pour indiquer une exécution réussie */
