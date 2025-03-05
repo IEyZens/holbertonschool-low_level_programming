@@ -27,10 +27,6 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 
-	/*Affichage des arguments*/
-	printf("Argument 1 : %s\n", argv[1]);
-	printf("Argument 2 : %s\n", argv[2]);
-
 	/*Multiplication des deux nombres*/
 	result = num1 * num2;
 
