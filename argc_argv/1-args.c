@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	(void)argv;
 
 	/* Affiche le nombre d'arguments, y compris le nom du programme */
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 
 	/* Retourne 0 pour indiquer une exécution réussie */
 	return (0);
