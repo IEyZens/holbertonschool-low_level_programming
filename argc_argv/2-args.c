@@ -9,14 +9,15 @@
 
 int main(int argc, char *argv[])
 {
-	/* Afficher le nombre d'arguments passées au programme */
-	printf("Il y a %d arguments\n", argc);
-
-	int i;
-
-	for (i = 0; i < argc; i++)
+	/* while permet de parcourir chaque argument dans argv */
+	/* La condition (*argv) vérifie si le pointeur pointe vers un argument */
+	while (*argv)
 	{
-		printf("Argument %d : %s\n", i, argv[i]);
+		/* Afficher l'argument */
+		printf("%s\n", *argv);
+
+		/* Passer à l'argument suivant en incrémentant argv*/
+		argv++;
 	}
 
 	/* Fin du programme */
