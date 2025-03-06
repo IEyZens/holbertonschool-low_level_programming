@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * set_string Set the string object
+ * set_string - Set the string object
  *
  * @s: est un char double pointeur
  * @to: est un char pointeur
