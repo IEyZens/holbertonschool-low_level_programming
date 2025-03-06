@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * @brief Set the string object
+ * set_string Set the string object
  *
- * @param s
- * @param to
+ * @s: est un char double pointeur
+ * @to: est un char pointeur
  */
 
 void set_string(char **s, char *to)
