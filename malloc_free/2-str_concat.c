@@ -8,7 +8,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int size = 0, i = 0, j = 0;
+	int size = 0;
 	char *c;
 
 	if (s1 == NULL)
@@ -24,19 +24,9 @@ char *str_concat(char *s1, char *s2)
 	if (!c)
 		return (NULL);
 
-	while (s1[i] != '\0')
-	{
-		c[i] = s1[i];
-		i++;
-	}
+	strcpy(c, s1);
 
-	while (s2[j] != '\0')
-	{
-		c[i + j] = s2[j];
-		j++;
-	}
-
-	c[i + j] = '\0';
+	strcat(c, s2);
 
 	return (c);
 }
