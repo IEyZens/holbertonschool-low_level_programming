@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = "";
 
-	/* Calculer la taille totale de la chaîne résultante sans utiliser strlen */
+	/* Calculer la taille totale de la chaîne résultante */
 	while (s1[i] != '\0')
 		i++;
 	while (s2[j] != '\0')
