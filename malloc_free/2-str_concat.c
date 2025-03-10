@@ -6,30 +6,35 @@
  * Return: valid the code
  */
 
- char *str_concat(char *s1, char *s2)
- {
-	 char *concat_str;
-	 int index, concat_index = 0, len = 0;
+char *str_concat(char *s1, char *s2)
+{
+	int i = 0, j = 0, k;
+	char *c;
 
-	 if (s1 == NULL)
-		 s1 = "";
+	if (s1 == NULL)
+		s1 = "";
 
-	 if (s2 == NULL)
-		 s2 = "";
+	if (s2 == NULL)
+		s2 = "";
 
-	 for (index = 0; s1[index] || s2[index]; index++)
-		 len++;
+	while (s1[i] != '\0')
+		i++;
 
-	 concat_str = malloc(sizeof(char) * len);
+	while (s2[j] != '\0')
+		j++;
 
-	 if (concat_str == NULL)
-		 return (NULL);
+	c = (char *)malloc((i + j + 1) * sizeof(char));
 
-	 for (index = 0; s1[index]; index++)
-		 concat_str[concat_index++] = s1[index];
+	if (!c)
+		return (NULL);
 
-	 for (index = 0; s2[index]; index++)
-		 concat_str[concat_index++] = s2[index];
+	for (k = 0; k < i; k++)
+		c[k] = s1[k];
 
-	 return (concat_str);
- }
+	for (k = 0; k < j; k++)
+		c[i + k] = s2[k];
+
+	c[i + j] = '\0';
+
+	return (c);
+}
