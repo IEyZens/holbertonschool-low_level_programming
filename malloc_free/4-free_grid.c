@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- *
+ * free_grid - check the code
+ * @grid: est un double pointeur int
+ * @height: est un int
  */
 
 void free_grid(int **grid, int height)
