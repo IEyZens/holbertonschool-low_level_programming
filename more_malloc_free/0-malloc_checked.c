@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * @brief
- *
+ * malloc_checked - check the code
+ * @b: est un int non assigné
+ * Return: valid the code
  */
 
 void *malloc_checked(unsigned int b)
