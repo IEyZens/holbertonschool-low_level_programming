@@ -1,6 +1,10 @@
 #include "main.h"
 /**
  * string_nconcat - check the code
+ * @s1: est un char pointeur
+ * @s2: est un char pointeur
+ * @n: est un int non assigné
+ * Return: valid the code
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
