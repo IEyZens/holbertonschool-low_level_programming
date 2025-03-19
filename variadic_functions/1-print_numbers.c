@@ -1,6 +1,8 @@
 #include "variadic_functions.h"
 /**
- *
+ * print_numbers - check the code
+ * @separator: est un char pointeur const
+ * @n: est un int non assigné const
  *
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
