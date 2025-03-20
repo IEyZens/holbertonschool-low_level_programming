@@ -18,6 +18,7 @@ void print_all(const char * const format, ...)
 		{'s', print_s},
 		{'\0', '\0'}
 	};
+
 	unsigned int i = 0;
 	unsigned int j = 0;
 	char *separator = "";
