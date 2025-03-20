@@ -16,4 +16,10 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+typedef struct format
+{
+	char format_in;
+	void (*function)(va_list);
+} format_t;
+
 #endif /* VARIADIC_FUNCTIONS_H */
