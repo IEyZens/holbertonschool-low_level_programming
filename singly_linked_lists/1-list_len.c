@@ -2,6 +2,9 @@
 
 /**
  * list_len - check the code
+ * @h: est un pointeur d'une liste constante
+ *
+ * Return: e
  */
 size_t list_len(const list_t *h)
 {
