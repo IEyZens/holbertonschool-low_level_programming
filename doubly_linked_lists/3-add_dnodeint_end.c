@@ -1,7 +1,11 @@
 #include "lists.h"
 
 /**
+ * add_dnodeint_end - check the code
+ * @head: est un double pointeur
+ * @n: est un int constant
  *
+ * Return: valid the code
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
