@@ -1,7 +1,10 @@
 #include "lists.h"
 
 /**
+ * sum_dlistint - check the code
+ * @head: est un pointeur
  *
+ * Return: valid the code
  */
 int sum_dlistint(dlistint_t *head)
 {
