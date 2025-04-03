@@ -1,7 +1,11 @@
 #include "main.h"
 
 /**
+ * read_textfile - check the code
+ * @filename: est un pointeur de type char constant
+ * @letters: est un size
  *
+ * Return: valid the code
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
