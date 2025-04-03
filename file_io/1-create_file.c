@@ -9,7 +9,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int cf = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0666);
+	int cf = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	ssize_t bytesWrite = write(cf, text_content, strlen(text_content));
 
 	if (filename == NULL)
