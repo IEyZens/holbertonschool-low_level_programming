@@ -9,15 +9,17 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int cf = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	ssize_t bytesWrite = write(cf, text_content, strlen(text_content));
+	int cf;
+	ssize_t bytesWrite;
 
 	if (filename == NULL)
 		return (-1);
 
+	cf = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (cf == -1)
 		return (-1);
 
+	bytesWrite = write(cf, text_content, strlen(text_content));
 	if (text_content != NULL)
 		if (bytesWrite == -1)
 		{
