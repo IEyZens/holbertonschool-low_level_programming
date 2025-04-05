@@ -1,6 +1,4 @@
 #include "lists.h"
-#include "2-add_dnodeint.c"
-#include "3-add_dnodeint_end.c"
 
 /**
  * insert_dnodeint_at_index - check the code
@@ -21,16 +19,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (idx == 0)
 		return (add_dnodeint(h, n));
 
-	while (current != NULL && i < idx - 1)
+	while (current != NULL && i < idx)
 	{
 		current = current->next;
 		i++;
 	}
 
-	if (current == NULL)
+	if (i != idx)
 		return (NULL);
 
-	if (current->next == NULL)
+	if (current == NULL)
 		return (add_dnodeint_end(h, n));
 
 	new_node = malloc(sizeof(dlistint_t));
@@ -38,13 +36,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	new_node->n = n;
-	new_node->next = current->next;
-	new_node->prev = current;
+	new_node->prev = current->prev;
+	new_node->next = current;
 
-	if (current->next != NULL)
-		current->next->prev = new_node;
+	if (current->prev != NULL)
+		current->prev->next = new_node;
+	else
+		*h = new_node;
 
-	current->next = new_node;
+	current->prev = new_node;
 
 	return (new_node);
 }
